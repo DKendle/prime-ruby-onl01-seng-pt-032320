@@ -1,9 +1,9 @@
-def prime?(number)
-  
-  (2..number/2).none? do |n|
-    if number <= 1 || number == 0
-      false
+def is_prime?(num)
+    flag = true
+    for x in 2..num-1
+        if num % x == 0
+            flag = false
+        end
     end
-
-end
+    return flag
 end
