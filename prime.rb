@@ -1,10 +1,7 @@
-def is_prime?(num)
+def prime?(number)
   
-    flag = true
-    for x in 2..num-1
-        if num % x == 0
-            flag = false
-        end
-    end
-    return flag
+  (2..number/2).none? do |number| 
+  if number <= 1 || number % n == 0
+    false
+  end
 end
