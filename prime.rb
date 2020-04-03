@@ -4,5 +4,6 @@ def prime?(number)
   if number <= 1 || number  == 0
     false
   end
+  true
 end
 end
